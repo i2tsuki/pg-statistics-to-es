@@ -1,0 +1,10 @@
+dist
+
+.git
+.gitignore
+
+.flake8
+
+.pyc
+
+.Dockerignore
