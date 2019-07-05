@@ -1,8 +1,9 @@
 #!/bin/sh
 
-GOARCH := $(shell $(GO) env GOARCH)
+GO="/usr/bin/go"
+GOARCH="$($GO env GOARCH)"
 
-GHR ?= $(GOPATH)/bin/ghr
+GHR="${GOPATH}/bin/ghr"
 LATEST_TAG="$(git describe --abbrev=0 --tags)"
 
 PKG="pg-statistics-to-es"
