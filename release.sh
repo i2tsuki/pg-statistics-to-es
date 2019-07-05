@@ -16,3 +16,4 @@ do
 done
 
 $GHR -replace ${LATEST_TAG} ./dist/${PKG}.zip
+git push origin --tags
