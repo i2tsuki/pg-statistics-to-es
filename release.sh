@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 GO="/usr/bin/go"
 GOARCH="$($GO env GOARCH)"
